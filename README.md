@@ -17,6 +17,8 @@ https://www.instagram.com/lmudeltasig/
 [API Registeration](https://www.instagram.com/developer/)  
 [API Docs](https://www.instagram.com/developer/authentication/)
 
+[Instafeed.js](http://instafeedjs.com/)
+
 ### Dev
 [Bootstrap 3](https://getbootstrap.com/docs/4.1/getting-started/introduction/)
 
