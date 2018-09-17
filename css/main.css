@@ -1,0 +1,30 @@
+body {
+    font-family: 'Helvetica', 'Arial', 'Calibri';
+}
+
+.nav-custom {
+    background-color: #007A33;
+    height: 3.5em;
+}
+
+a {
+    color: #FFFEF6;
+}
+
+a:hover {
+    color: #EAAA00 !important;
+}
+
+
+button {
+    color: #FFFEF6;
+}
+
+.logo {
+    height: 2em;
+    auto;
+}
+
+.nav-link {
+    padding-left: 1em;
+}
