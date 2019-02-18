@@ -1,18 +1,6 @@
 body {
     font-family: 'Helvetica', 'Arial', 'Calibri';
-}
-
-.nav-custom {
-    background-color: #007A33;
-    height: 3.5em;
-}
-
-a {
-    color: #FFFEF6;
-}
-
-a:hover {
-    color: #EAAA00 !important;
+    color: white;
 }
 
 
@@ -25,6 +13,134 @@ button {
     auto;
 }
 
-.nav-link {
-    padding-left: 1em;
+.overlay {
+  position: absolute;
+  background-color: rgba(0,0,0,1);
+  height: 100vh;
+  width: 100vw;
+  z-index: -1;
+  pointer-events:none;
+  overflow: hidden;
+}
+
+.feed {
+  position: absolute;
+  top: 0px;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.thumbnail {
+  position: relative;
+  z-index: 0;
+  opacity: 0.8;
+}
+
+.feed img {
+  position: relative;
+  margin-top: 0px;
+  z-index: 0;
+  opacity: 0.5;
+  animation-name: fade-out;
+  animation-duration: 0.5s;
+}
+
+.thumbnail:hover > img {
+  z-index: 2;
+  opacity: 1.0;
+  animation-name: fade-in;
+  animation-duration: 0.5s;
+}
+
+
+/* The animation code */
+@keyframes fade-in {
+ from {opacity: 0.5;}
+ to {opacity: 1;}
+}
+/* The animation code */
+@keyframes fade-out {
+ from {opacity: 1;}
+ to {opacity: 0.5;}
+}
+
+.title-box {
+  pointer-events:none;
+  position: absolute;
+  top: 40%;
+  bottom: 50%;
+  text-align: center;
+  width: 100%;
+  z-index: 10;
+}
+
+.title-words {
+  font-size: 7vw;
+}
+
+.text-replacer {
+  font-size: 3vw;
+}
+
+.loading {
+  background-color:black;
+  background-image: url("../images/loading-screen.png");
+  z-index: 4;
+  position: fixed;
+      background-size: 100%;
+  width: 100vw;
+  height: 100vh;
+}
+
+@keyframes load-out {
+ from {opacity: 1;}
+ to {
+   opacity: 0;
+   display: none;
+ }
+}
+
+.link {
+  z-index: 8;
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #007A33;
+  bottom: 20px;
+  color: white;
+  text-align: center;
+  vertical-align: center;
+  padding: 10px 10px;
+}
+
+.link:hover {
+  color: #007A33;
+  background-color: white;
+  animation-name: color-switch;
+  animation-duration: .5s;
+}
+
+@keyframes color-switch {
+ from {
+   color: white;
+   background-color: #007A33;
+ }
+ to {
+   color: #007A33;
+   background-color: white;
+ }
+}
+
+#facebook {
+  right: 20px;
+}
+
+#instagram {
+  right: 90px;
+}
+
+#nationals {
+  right: 160px;
 }
